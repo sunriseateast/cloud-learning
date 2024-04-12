@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>AWS Cloudfront function</title>
+    <style>
+        .background{
+            background-color: black;
+            color: bisque;
+        }
+    </style>
+</head>
+<body class="background">
+    <div>
+        <h1>I'm new version of application</h1>
+        <Button id="cookie">Old Version</Button>
+    </div>
+</body>
+<script>
+    document.getElementById("cookie").addEventListener("click",(e)=>{
+        document.cookie="version=new";
+        window.location.reload()
+    })
+    // if(document.cookie){
+    //     window.location.href="https://www.youtube.com/"
+    // }
+</script>
